@@ -10,7 +10,6 @@ class DetailUserActivity : AppCompatActivity() {
     val TAG = "DetailUserActivity"
     private lateinit var binding: ActivityDetailUserBinding
     var name: String? = null
-    var date: String? = null
     var picture: String? = null
     var gender: String? = null
     var city: String? = null

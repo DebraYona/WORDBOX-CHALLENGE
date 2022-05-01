@@ -5,7 +5,7 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface RandomApiClient {
-    @GET("?results=51/")
+    @GET("?results=50")
     suspend fun getUser(
     ): Response<ResponseRandomUser>
 

@@ -13,8 +13,7 @@ data class RandomUserModel(
 )
 
 data class  ResponseRandomUser(
-    @SerializedName("results") val results: List<RandomUserModel>,
-    @SerializedName("info") val info: String,
+    @SerializedName("results") val results: List<RandomUserModel>
 )
 
 data class  UserName(

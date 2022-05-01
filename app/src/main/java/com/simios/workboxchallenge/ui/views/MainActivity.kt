@@ -56,11 +56,12 @@ class MainActivity : AppCompatActivity() {
     fun onItemSelected(user: User) {
         val intent = Intent(this, DetailUserActivity::class.java).apply {
             putExtra("name", user.name)
-            putExtra("image", user.picture)
+            putExtra("picture", user.picture)
             putExtra("gender", user.gender)
             putExtra("age", user.age)
             putExtra("city", user.location)
             putExtra("email", user.email)
+            putExtra("phone", user.phone)
         }
         startActivity(intent)
     }
