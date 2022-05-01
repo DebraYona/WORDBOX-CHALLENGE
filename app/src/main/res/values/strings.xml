@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wordbox Challenge</string>
+    <string name="age">age</string>
+    <string name="gender">gender</string>
+</resources>
