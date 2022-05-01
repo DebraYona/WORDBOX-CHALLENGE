@@ -1,6 +1,6 @@
-package com.simios.comicsapp.core
+package com.simios.workboxchallenge.core
 
-import com.simios.comicsapp.utils.Constants
+import com.simios.workboxchallenge.utils.Constants
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

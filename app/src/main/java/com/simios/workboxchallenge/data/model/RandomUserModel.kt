@@ -15,7 +15,6 @@ data class RandomUserModel(
 data class  ResponseRandomUser(
     @SerializedName("results") val results: List<RandomUserModel>,
     @SerializedName("info") val info: String,
-
 )
 
 data class  UserName(
@@ -29,6 +28,7 @@ data class Picture(
     @SerializedName("medium") val medium: String,
     @SerializedName("thumbnail") val thumbnail: String,
     )
+
 data class UserAge(
     @SerializedName("date") val date: String,
     @SerializedName("age") val age: Int,

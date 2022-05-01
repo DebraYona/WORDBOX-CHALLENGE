@@ -1,4 +1,4 @@
-package com.simios.comicsapp.utils
+package com.simios.workboxchallenge.utils
 
 sealed class Resource<T>(
     val data: T? = null,

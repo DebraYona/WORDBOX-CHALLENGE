@@ -18,11 +18,7 @@ class GetUserRepository @Inject constructor(
         return response.map { it.toDomain() }
     }
 
-    suspend fun getUserInsert(comic: UserEntity) {
-        return userDao.insertUser(comic)
-    }
-
-    suspend fun getAllQuotesFromDatabase():List<User>{
+    suspend fun getAllUsersFromDatabase():List<User>{
         val response: List<UserEntity> = userDao.getAllUsers()
         return response.map { it.toDomain() }
     }

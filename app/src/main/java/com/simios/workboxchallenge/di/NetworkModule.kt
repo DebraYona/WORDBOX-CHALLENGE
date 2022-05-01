@@ -1,6 +1,6 @@
 package com.simios.workboxchallenge.di
 
-import com.simios.comicsapp.utils.Constants
+import com.simios.workboxchallenge.utils.Constants
 import com.simios.workboxchallenge.data.network.RandomApiClient
 import dagger.Module
 import dagger.Provides

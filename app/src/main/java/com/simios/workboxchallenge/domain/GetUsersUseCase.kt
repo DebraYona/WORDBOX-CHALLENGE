@@ -15,7 +15,7 @@ class GetUsersUseCase @Inject constructor(private val repository: GetUserReposit
             repository.insertAllUser(users.map { it.toDatabase() })
             users
         }else{
-            repository.getAllQuotesFromDatabase()
+            repository.getAllUsersFromDatabase()
         }
     }
 }

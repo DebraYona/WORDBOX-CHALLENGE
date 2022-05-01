@@ -1,7 +1,6 @@
 package com.simios.workboxchallenge.data.network
 
 import com.simios.workboxchallenge.data.model.RandomUserModel
-import com.simios.workboxchallenge.data.model.ResponseRandomUser
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

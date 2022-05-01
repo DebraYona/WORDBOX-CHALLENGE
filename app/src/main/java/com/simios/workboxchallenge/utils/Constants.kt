@@ -1,7 +1,7 @@
-package com.simios.comicsapp.utils
+package com.simios.workboxchallenge.utils
 
 class Constants {
     companion object {
-        const val BASE_URL = "https://randomuser.me/api/?results=51&callback=randomuserdata/";
+        const val BASE_URL = "https://randomuser.me/api/";
     }
 }

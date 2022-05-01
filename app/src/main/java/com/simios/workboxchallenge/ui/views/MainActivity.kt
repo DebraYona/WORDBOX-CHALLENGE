@@ -5,9 +5,10 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.simios.comicsapp.ui.adapters.UserListAdapter
+import com.simios.workboxchallenge.ui.adapters.UserListAdapter
 import com.simios.workboxchallenge.ui.viewmodels.UsersViewModel
 
 import com.simios.workboxchallenge.databinding.ActivityMainBinding
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         userViewModel.onCreate()
         loadLastedComics()
+        loadingObserver()
     }
 
     private fun loadLastedComics() {
@@ -37,6 +39,12 @@ class MainActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "No Data", Toast.LENGTH_LONG).show()
             }
+        })
+    }
+
+    private fun loadingObserver(){
+        userViewModel.isLoading.observe(this, Observer {
+            binding.loading.isVisible = it
         })
     }
 

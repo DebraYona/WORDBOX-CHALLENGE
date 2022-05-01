@@ -1,4 +1,4 @@
-package com.simios.comicsapp.ui.adapters
+package com.simios.workboxchallenge.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.View
