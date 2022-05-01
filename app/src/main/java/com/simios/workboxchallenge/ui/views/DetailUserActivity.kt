@@ -27,7 +27,7 @@ class DetailUserActivity : AppCompatActivity() {
 
     private fun getData() {
         if (intent.hasExtra("name") && intent.hasExtra("picture") &&
-            intent.hasExtra("gender")&& intent.hasExtra("age") &&
+            intent.hasExtra("gender") && intent.hasExtra("age") &&
             intent.hasExtra("city") && intent.hasExtra("phone")
             && intent.hasExtra("email")
         ) {

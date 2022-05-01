@@ -1,7 +1,7 @@
 package com.simios.workboxchallenge.di
 
-import com.simios.workboxchallenge.utils.Constants
 import com.simios.workboxchallenge.data.network.RandomApiClient
+import com.simios.workboxchallenge.utils.Constants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -23,7 +23,7 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun providerClient( logger: HttpLoggingInterceptor): OkHttpClient {
+    fun providerClient(logger: HttpLoggingInterceptor): OkHttpClient {
         return OkHttpClient.Builder()
             .addInterceptor(logger)
             .build()
@@ -31,7 +31,7 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideRetrofit(client:OkHttpClient):Retrofit{
+    fun provideRetrofit(client: OkHttpClient): Retrofit {
         return Retrofit.Builder()
             .baseUrl(Constants.BASE_URL)
             .client(client)

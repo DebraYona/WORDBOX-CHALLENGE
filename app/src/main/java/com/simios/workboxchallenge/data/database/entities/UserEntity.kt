@@ -17,7 +17,7 @@ data class UserEntity(
     @ColumnInfo(name = "phone") val phone: String,
     @ColumnInfo(name = "location") val location: String,
     @ColumnInfo(name = "age") val age: Int,
-){}
+)
 
 fun User.toDatabase() =
     UserEntity(

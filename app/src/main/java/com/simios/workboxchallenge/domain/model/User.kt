@@ -13,8 +13,16 @@ data class User(
     val phone: String,
 )
 
-fun RandomUserModel.toDomain():User =
-    User(gender, dob.age,name.title + " " + name.first + " " + name.last, picture.medium, email, location.city, phone)
+fun RandomUserModel.toDomain(): User =
+    User(
+        gender,
+        dob.age,
+        name.title + " " + name.first + " " + name.last,
+        picture.medium,
+        email,
+        location.city,
+        phone
+    )
 
 fun UserEntity.toDomain() =
     User(gender, age, name, picture, email, location, phone)
