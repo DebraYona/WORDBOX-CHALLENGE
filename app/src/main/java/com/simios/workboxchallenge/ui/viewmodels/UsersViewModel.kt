@@ -5,12 +5,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.simios.workboxchallenge.domain.GetUsersUseCase
 import com.simios.workboxchallenge.domain.model.User
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-@HiltViewModel
-class UsersViewModel @Inject constructor(
+class UsersViewModel (
     private val usecase: GetUsersUseCase,
 ) : ViewModel() {
     val listUsers: MutableLiveData<List<User>> = MutableLiveData()

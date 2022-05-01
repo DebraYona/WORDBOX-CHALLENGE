@@ -6,9 +6,8 @@ import com.simios.workboxchallenge.domain.model.User
 import com.simios.workboxchallenge.data.model.RandomUserModel
 import com.simios.workboxchallenge.data.network.GetUsersService
 import com.simios.workboxchallenge.domain.model.toDomain
-import javax.inject.Inject
 
-class GetUserRepository @Inject constructor(
+class GetUserRepository (
     private val api: GetUsersService,
     private val userDao: UserDao
 ) {

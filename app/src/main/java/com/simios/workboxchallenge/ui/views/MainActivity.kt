@@ -3,7 +3,6 @@ package com.simios.workboxchallenge.ui.views
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
@@ -12,15 +11,14 @@ import com.simios.workboxchallenge.databinding.ActivityMainBinding
 import com.simios.workboxchallenge.domain.model.User
 import com.simios.workboxchallenge.ui.adapters.UserListAdapter
 import com.simios.workboxchallenge.ui.viewmodels.UsersViewModel
-import dagger.hilt.android.AndroidEntryPoint
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     val TAG = "MainActivity"
 
     private lateinit var binding: ActivityMainBinding
 
-    private val userViewModel: UsersViewModel by viewModels()
+    private val userViewModel: UsersViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
